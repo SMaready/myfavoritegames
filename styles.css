@@ -43,7 +43,7 @@ top-header{
 	color: #0074D9;
 }
 	
-#menu li:hover a, #menu li span{
+#menu li:hover a {
     font-size: larger;
 	background: white;
 	color: #0074D9;
@@ -52,6 +52,7 @@ top-header{
 }
 
 body{
+	background-color: gray;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -63,8 +64,8 @@ body{
 }
 
 .carousel {
-    display: flex;
-    transition: transform 0.3s ease;
+	display: flex;
+	transition: transform 0.3s ease;
 }
 
 .carousel-slide {
@@ -79,12 +80,6 @@ img {
 
 button {
 	background-color: white;
-}
-
-button img {
-	height: 100px;
-	width: auto;
-	color: gray;
 }
 
 #prev {
@@ -107,3 +102,31 @@ button img {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+/*Creating flexboxes for the genres pages and game pages*/
+
+.box {
+	height: 400px;
+	width: 200px;
+	background-color: #0074B4;
+	font-size: 40px;
+}
+
+#whole_genre_flexbox {
+	min-height: 800px;
+	display: flex;
+	border: 8px solid black;
+	justify-content: space-evenly;
+	align-items: center; /* if have multiple rows, use space-evenly here as well */
+}
+
+#whole_cod4_flexbox {
+	min-height: 1000px;
+	display: flex;
+	border: 8px solid black;
+	justify-content: space-evenly;
+	align-items: center; /* if have multiple rows, use space-evenly here as well */
+}
+
+/* ------------------------------------------------------------------------------------------------------------*/
+

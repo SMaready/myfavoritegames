@@ -12,7 +12,7 @@ function showSlide(index) {
     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Next and previous buttons (optional)
+// Next and previous buttons
 const nextButton = document.getElementById("next");
 const prevButton = document.getElementById("prev");
 
@@ -28,11 +28,13 @@ if (nextButton && prevButton) {
     });
 }
 
-// Auto-advance the carousel (optional)
-const autoAdvanceInterval = 7000; // Change slide every 7 seconds
+// Auto-advance the carousel
+const autoAdvanceInterval = 10000; // Change slide every 10 seconds
 
+// If statement so that if next or prev button clicks the 10 sec interval resets?
 setInterval(() => {
     currentIndex++;
     showSlide(currentIndex);
 }, autoAdvanceInterval);
+
 
