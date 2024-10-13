@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genres of games</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
     <header>
         <div>
             <nav class="navbar">
                 <ul>
                     <li>
-                        <a href = "/index.html">Home</a>
+                        <a href="/index.html">Home</a>
                     </li>
                     <li>
-                        <a href = "#">Genres</a>
+                        <a href="#">Genres</a>
                     </li>
                     <li>
-                        <a href = "/about/aboutus.html">About Us</a>
+                        <a href="/about/aboutus.html">About Us</a>
                     </li>
                 </ul>
             </nav>
@@ -26,14 +28,48 @@
     </header>
 
     <main>
-        <div id = "whole_genre_flexbox">
-            <div class="box" id ="fps_gamecard"><a href="/genres/fps.html">First Person Shooter</a></div>
-            <div class="box" id="action/adv_gamecard"><a href="/genres/actionadventure.html">Action / Adventure</a></div>
-            <div class="box">Sports</div>
-            <div class="box">Puzzle</div>
-            <div class="box">Survival</div>
-            <div class="box">MMO</div>
+        <div id="genre_info">
+            <p>
+                These are some of my favorite genres of video games. Some of these video games can technically fall
+                under multiple categories so
+                I tried classifying most of the games under what I think they fall under as their "main" category.
+            </p>
         </div>
+
+        <div id="whole_genre_flexbox">
+            <div class="box" id="fps_gamecard">
+                <div id="fps_gamecard_title">
+                    <a href="/genres/fps.html">First Person Shooter</a>
+                </div>
+            </div>
+            <div class="box" id="action_adv_gamecard">
+                <div>
+                    <a href="/genres/actionadventure.html">Action / Adventure</a>
+                </div>
+            </div>
+            <div class="box" id="sports_gamecard">
+                <div>
+                    <a href="/genres/sports.html">Sports</a>
+                </div>
+            </div>
+            <div class="box" id="puzzle_gamecard">
+                <div>
+                    <a href="/genres/puzzle.html">Puzzle</a>
+                </div>
+            </div>
+            <div class="box" id="survival_gamecard">
+                <div>
+                    <a href="/genres/survival.html">Survival</a>
+                </div>
+            </div>
+            <div class="box" id="mmo_gamecard">
+                <div>
+                    <a href="/genres/mmo.html">MMO</a>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
+
 </html>

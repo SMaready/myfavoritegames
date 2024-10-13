@@ -37,8 +37,8 @@ header > div {
 main > h1 {
 	text-align: center;
 	font-family: cursive;
+	font-size: 50px;
 }
-
 
 body{
 	background-color: black;
@@ -64,8 +64,25 @@ main {
 	/*border: 2px solid purple;*/
 	min-width: 590px;
 	max-width: 590px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
+#home_intro p {
+	font-family: cursive;
+	font-size: 30px;
+}
+
+footer {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: last baseline;
+	/*border: 4px solid purple;*/
+	min-height: 300px;
+	
+}
 
 /*Carousel*/
 
@@ -137,41 +154,192 @@ main {
 
 .box {
 	height: 400px;
-	width: 200px;
+	width: 600px;
 	background-color: #0074B4;
 	font-size: 40px;
+	padding: 3px;
+	border: 6px groove white;
+	border-radius: 5%;
 }
 
-.box > a {
-	text-decoration: none;
+#genre_info {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	border-bottom: 3px solid white;
+}
+
+#genre_info p {
+	font-family: cursive;
+	font-size: 30px;
+	margin-left: 60px;
+	margin-right: 60px;;
 }
 
 #whole_genre_flexbox {
 	min-height: 800px;
 	display: flex;
-	border: 8px solid black;
+	/* border: 3px solid purple; */
 	justify-content: space-evenly;
+	gap: 50px;
 	align-items: center; /* if have multiple rows, use space-evenly here as well */
 	flex-wrap: wrap;
 	font-family: cursive;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 #whole_cod4_flexbox {
 	min-height: 1000px;
 	display: flex;
-	border: 8px solid black;
+	border: 8px solid purple;
 	justify-content: space-evenly;
 	align-items: center; /* if have multiple rows, use space-evenly here as well */
 }
 
 #fps_gamecard {
-	background-image: url(/photos/fps_background_image.jpg);
+	background: url(/photos/fps_background_image_3.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
 	justify-content: center;
-}
-
-#fps_gamecard > a {
-	justify-content: center;
+	align-content: center;
 	align-items: center;
 }
 
+#fps_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+
+}
+
+#fps_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#action_adv_gamecard {
+	background: url(/photos/action_adventure_background_image.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#action_adv_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+
+}
+
+#action_adv_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#sports_gamecard {
+	background: url(/photos/sports_background_image.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#sports_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+
+}
+
+#sports_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#puzzle_gamecard {
+	background: url(/photos/puzzle_background_image.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#puzzle_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+
+}
+
+#puzzle_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#survival_gamecard {
+	background: url(/photos/survival_background_image.jpeg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#survival_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+
+}
+
+#survival_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#mmo_gamecard {
+	background: url(/photos/mmo_background_image.webp) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#mmo_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+
+}
+
+#mmo_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
 /* ------------------------------------------------------------------------------------------------------------*/
