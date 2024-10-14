@@ -596,7 +596,6 @@ footer {
 	text-decoration: none;
 }
 
-
 #littlebigplanet_3_gamecard {
 	background: url(/photos/littlebigplanet_3_background_image.avif) no-repeat center center;
 	background-size: cover;
@@ -616,6 +615,121 @@ footer {
 }
 
 #littlebigplanet_3_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#dayz_gamecard {
+	background: url(/photos/dayz_background_image.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#dayz_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+}
+
+#dayz_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#minecraft_gamecard {
+	background: url(/photos/minecraft_background_image.webp) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#minecraft_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+}
+
+#minecraft_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#wow_gamecard {
+	background: url(/photos/wow_background_image.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#wow_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+}
+
+#wow_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#ddo_gamecard {
+	background: url(/photos/ddo_background_image.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#ddo_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+}
+
+#ddo_gamecard > div > a {
+	color:black;
+	text-decoration: none;
+}
+
+#eso_gamecard {
+	background: url(/photos/eso_background_image.avif) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#eso_gamecard > div {
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	min-width: 100%;
+	background-color: aliceblue;
+}
+
+#eso_gamecard > div > a {
 	color:black;
 	text-decoration: none;
 }
