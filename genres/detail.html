@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title id="page_title">Genre</title>
 </head>
 
@@ -16,13 +16,13 @@
             <nav class="navbar">
                 <ul>
                     <li>
-                        <a href="/index.html">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="/genres/index.html">Genres</a>
+                        <a href="../genres/index.html">Genres</a>
                     </li>
                     <li>
-                        <a href="/about/index.html">About</a>
+                        <a href="../about/index.html">About</a>
                     </li>
                 </ul>
             </nav>
@@ -91,7 +91,7 @@
                         var card = $("<div>");
                         card.attr("id", "game_card_" + data[i].id);
                         card.addClass("box");
-                        card.css("background-image", "url(" + data[i].imageUrl + ")");
+                        card.css("background-image", "url(.." + data[i].imageUrl + ")");
                         card.addClass("game_card");
 
                         var title = $("<div>");
