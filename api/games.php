@@ -32,6 +32,7 @@ if ($conn->connect_error) {
 $sql = "SELECT ga.id, 
         ga.name, 
         ga.genreId,
+        ga.imageUrl,
         ge.name AS genreName,
         ge.description AS genreDescription
         FROM games ga INNER JOIN genres ge ON ga.genreId=ge.Id";
@@ -65,6 +66,7 @@ if ($result->num_rows > 0) {
       'id' => $row["id"],
       'name' => $row["name"],
       'genreId' => $row["genreId"],
+      'imageUrl' => $row["imageUrl"],
       'genreName' => $row["genreName"],
       'genreDescription' => $row["genreDescription"]
     ];
