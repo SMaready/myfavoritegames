@@ -266,6 +266,17 @@ footer {
   color: black;
 }
 
+#black_ops_image {
+  background-image: url();
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
 p {
   font-size: 20px;
 }
@@ -403,20 +414,6 @@ p {
   align-items: center;
 }
 
-#mmo_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#mmo_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #cod4_gamecard {
   background: url(/photos/cod4_background_image.jpg) no-repeat center center;
   background-size: cover;
@@ -426,20 +423,6 @@ p {
   align-items: center;
 }
 
-#cod4_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#cod4_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #halo3_gamecard {
   background: url(/photos/halo3_background_image.jpg) no-repeat center center;
   background-size: cover;
@@ -447,20 +430,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#halo3_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#halo3_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #black_ops_gamecard {
@@ -473,20 +442,6 @@ p {
   align-items: center;
 }
 
-#black_ops_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#black_ops_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #halo3_odst_gamecard {
   background: url(/photos/halo_odst_background_image.jpg) no-repeat center
     center;
@@ -495,20 +450,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#halo3_odst_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#halo3_odst_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #uncharted3_gamecard {
@@ -521,20 +462,6 @@ p {
   align-items: center;
 }
 
-#uncharted3_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#uncharted3_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #arkham_knight_gamecard {
   background: url(/photos/arkham_knight_background_image.jpg) no-repeat center
     center;
@@ -543,20 +470,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#arkham_knight_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#arkham_knight_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #fifa15_gamecard {
@@ -568,20 +481,6 @@ p {
   align-items: center;
 }
 
-#fifa15_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#fifa15_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #nba2k16_gamecard {
   background: url(/photos/nba2k16_background_image.jpg) no-repeat center center;
   background-size: cover;
@@ -589,20 +488,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#nba2k16_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#nba2k16_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #supermariostrikers_gamecard {
@@ -615,20 +500,6 @@ p {
   align-items: center;
 }
 
-#supermariostrikers_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#supermariostrikers_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #portal2_gamecard {
   background: url(/photos/portal2_background_image.jpeg) no-repeat center center;
   background-size: cover;
@@ -636,20 +507,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#portal2_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#portal2_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #call_of_the_sea_gamecard {
@@ -662,20 +519,6 @@ p {
   align-items: center;
 }
 
-#call_of_the_sea_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#call_of_the_sea_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #littlebigplanet_3_gamecard {
   background: url(/photos/littlebigplanet_3_background_image.avif) no-repeat
     center center;
@@ -686,20 +529,6 @@ p {
   align-items: center;
 }
 
-#littlebigplanet_3_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#littlebigplanet_3_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #dayz_gamecard {
   background: url(/photos/dayz_background_image.jpg) no-repeat center center;
   background-size: cover;
@@ -707,20 +536,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#dayz_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#dayz_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #minecraft_gamecard {
@@ -733,20 +548,6 @@ p {
   align-items: center;
 }
 
-#minecraft_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#minecraft_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #wow_gamecard {
   background: url(/photos/wow_background_image.jpg) no-repeat center center;
   background-size: cover;
@@ -754,20 +555,6 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-#wow_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#wow_gamecard > div > a {
-  color: black;
-  text-decoration: none;
 }
 
 #ddo_gamecard {
@@ -779,20 +566,6 @@ p {
   align-items: center;
 }
 
-#ddo_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#ddo_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
-
 #eso_gamecard {
   background: url(/photos/eso_background_image.avif) no-repeat center center;
   background-size: cover;
@@ -802,17 +575,4 @@ p {
   align-items: center;
 }
 
-#eso_gamecard > div {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  min-width: 100%;
-  background-color: aliceblue;
-}
-
-#eso_gamecard > div > a {
-  color: black;
-  text-decoration: none;
-}
 /* ------------------------------------------------------------------------------------------------------------*/
