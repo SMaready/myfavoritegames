@@ -6,6 +6,7 @@ CREATE TABLE genres (
     id INT NOT NULL,
     name VARCHAR(100) NOT NULL,
     imageUrl VARCHAR(200) NOT NULL,
+    description VARCHAR(300) NOT NULL, 
     PRIMARY KEY (Id)
 );
 
@@ -20,12 +21,12 @@ CREATE TABLE games(
 ALTER TABLE games
 ADD FOREIGN KEY (genreId) REFERENCES genres(id);
 
-INSERT INTO genres(id, name, imageUrl, detailUrl) VALUES (1, 'First Person Shooter', '/photos/fps_background_image_3.jpg');
-INSERT INTO genres(id, name, imageUrl, detailUrl) VALUES (2, 'Action / Adventure', '/photos/action_adventure_background_image.jpg');
-INSERT INTO genres(id, name, imageUrl, detailUrl) VALUES (3, 'Sports', '/photos/sports_background_image.jpg');
-INSERT INTO genres(id, name, imageUrl, detailUrl) VALUES (4, 'Puzzle', '/photos/puzzle_background_image.jpg');
-INSERT INTO genres(id, name, imageUrl, detailUrl) VALUES (5, 'Survival', '/photos/survival_background_image.jpeg');
-INSERT INTO genres(id, name, imageUrl, detailUrl) VALUES (6, 'MMO', '/photos/mmo_background_image.webp');
+INSERT INTO genres(id, name, imageUrl, description) VALUES (1, 'First Person Shooter', '/photos/fps_background_image_3.jpg', '');
+INSERT INTO genres(id, name, imageUrl, description) VALUES (2, 'Action / Adventure', '/photos/action_adventure_background_image.jpg', '');
+INSERT INTO genres(id, name, imageUrl, description) VALUES (3, 'Sports', '/photos/sports_background_image.jpg', '');
+INSERT INTO genres(id, name, imageUrl, description) VALUES (4, 'Puzzle', '/photos/puzzle_background_image.jpg', '');
+INSERT INTO genres(id, name, imageUrl, description) VALUES (5, 'Survival', '/photos/survival_background_image.jpeg', '');
+INSERT INTO genres(id, name, imageUrl, description) VALUES (6, 'MMO', '/photos/mmo_background_image.webp', '');
 
 INSERT INTO games(id, name, genreId, imageUrl) VALUES (1, 'Black Ops', 1, '/photos/black_ops_background_image.jpg');
 INSERT INTO games(id, name, genreId, imageUrl) VALUES (2, 'Halo 3', 1, '/photos/halo3_background_image.jpg');
@@ -47,5 +48,5 @@ INSERT INTO games(id, name, genreId, imageUrl) VALUES (13, 'Minecraft', 5, '/pho
 INSERT INTO games(id, name, genreId, imageUrl) VALUES (14, 'DayZ', 5, '/photos/dayz_background_image.jpg');
 
 INSERT INTO games(id, name, genreId, imageUrl) VALUES (15, 'World of Warcraft', 6, '/photos/wow_background_image.jpg');
-INSERT INTO games(id, name, genreId, imageUrl) VALUES (15, 'Dungeons and Dragons Online', 6, '/photos/ddo_background_image.jpg');
-INSERT INTO games(id, name, genreId, imageUrl) VALUES (15, 'Elder Scrolls Online', 6, '/photos/eso_background_image.avif');
+INSERT INTO games(id, name, genreId, imageUrl) VALUES (16, 'Dungeons and Dragons Online', 6, '/photos/ddo_background_image.jpg');
+INSERT INTO games(id, name, genreId, imageUrl) VALUES (17, 'Elder Scrolls Online', 6, '/photos/eso_background_image.avif');
