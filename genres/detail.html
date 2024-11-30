@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <title id="page_title">Genre</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/genres/index.html">Genres</a>
+                    </li>
+                    <li>
+                        <a href="/about/index.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="genre_name"></h1>
+        <div>
+            <p id="genre_description"></p>
+        </div>
+
+        <div class="game_search">
+            <input id="search_input" type="text" placeholder="Search for games...">
+            <button id="search_button" type="submit">
+                <p>Search</p>
+            </button>
+        </div>
+
+        <div id="games_container"></div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Awesome Games Inc. &#127918;</p>
+        </div>
+    </footer>
+
+    <script>
+        const apiUrl = "http://localhost/games_project/games.php";
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const genreId = urlParams.get('genreid');
+        var apiQueryString = "?genreid=" + genreId;
+
+        $(document).ready(function () {
+            $("#search_button").click(function () {
+                var searchInput = $('#search_input').val();
+
+                if (searchInput != undefined && searchInput.trim() != "") {
+                    apiQueryString += "&name=" + searchInput;
+                }
+
+                getGames(apiUrl + apiQueryString);
+            });
+
+            getGames(apiUrl + apiQueryString);
+        });
+
+        function getGames(url) {
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (data) {
+                    console.log(data);
+                    var games = $("#games_container");
+                    games.empty();
+
+                    if (data.length > 0) {
+                        $("#genre_name").text(data[0].genreName);
+                        $("#genre_description").text(data[0].genreDescription);
+                    }
+
+                    for (var i = 0; i < data.length; i++) {
+
+                        var card = $("<div>");
+                        card.attr("id", "game_card_" + data[i].id);
+                        card.addClass("box");
+                        card.css("background-image", "url(" + data[i].imageUrl + ")");
+                        card.addClass("game_card");
+
+                        var title = $("<div>");
+                        title.attr("id", "game_card_title_" + data[i].id);
+                        title.addClass("game_title");
+                        card.append(title);
+
+                        var link = $("<a>");
+                        link.attr("id", "game_link_" + data[i].id);
+                        link.attr("href", "./detail.html?genreId=" + data[i].id);
+                        link.text(data[i].name);
+                        link.addClass("game_link");
+                        title.append(link);
+                        games.append(card);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

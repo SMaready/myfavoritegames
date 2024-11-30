@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>Games</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/genres/genres.html">Genres</a>
+          </li>
+          <li>
+            <a href="/about/index.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1 id="game_name">Game Name</h1>
+
+    <div id="whole_cod4_flexbox">
+      <div class="box">
+        <p id="game_description">Description</p>
+      </div>
+
+      <div class="box">
+        <img id="game_image" src="" alt="Game Image Cover Art" />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p id="game_studio">Game Studio &#127918;</p>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $("#myButton").click(function () {
+        console.log("Button clicked!");
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Genres Of Games</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Genres</a>
+                    </li>
+                    <li>
+                        <a href="/about/index.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="genre_info">
+            <p>
+                These are some of my favorite genres of video games. Some of these video games can technically fall
+                under multiple categories so
+                I tried classifying most of the games under what I think they fall under as their "main" category.
+            </p>
+        </div>
+
+        <div class="genre_search">
+            <input id="search_input" type="text" placeholder="Search for genre...">
+            <button id="search_button" type="submit">
+                <p>Search</p>
+            </button>
+        </div>
+
+        <div id="genres_container"></div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Awesome Games Inc. &#127918;</p>
+        </div>
+    </footer>
+
+    <script>
+        const apiUrl = "http://localhost/games_project/genres.php";
+
+        $(document).ready(function () {
+            $("#search_button").click(function () {
+                var searchInput = $('#search_input').val();
+                var queryString = "";
+
+                if (searchInput != undefined && searchInput.trim() != "") {
+                    queryString = "?name=" + searchInput;
+                }
+
+                getGenres(apiUrl + queryString);
+            });
+
+            getGenres(apiUrl);
+        });
+
+        function getGenres(url) {
+            $.ajax({
+                url: url,
+                type: "GET",
+                success: function (data) {
+                    console.log(data);
+                    var genres = $("#genres_container");
+                    genres.empty();
+
+                    for (var i = 0; i < data.length; i++) {
+                        var card = $("<div>");
+                        card.attr("id", "genre_gamecard_" + data[i].id);
+                        card.addClass("box");
+                        card.css("background-image", "url(" + data[i].imageUrl + ")");
+                        card.addClass("genre_card");
+
+                        var title = $("<div>");
+                        title.attr("id", "genre_gamecard_title_" + data[i].id);
+                        title.addClass("genre_title");
+                        card.append(title);
+
+                        var link = $("<a>");
+                        link.attr("id", "genre_link_" + data[i].id);
+                        link.attr("href", "./detail.html?genreid=" + data[i].id);
+                        link.text(data[i].name);
+                        link.addClass("genre_link");
+                        title.append(link);
+                        genres.append(card);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

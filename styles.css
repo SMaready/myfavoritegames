@@ -1,740 +1,808 @@
 .navbar {
-	display: flex;
-	justify-content: center;
-	margin: 0px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
 }
 
 .navbar ul {
-	list-style-type: none;
-	background-color: hsl(0, 0%, 30%);
-	padding: 0px;
-	margin: 0px;
-	overflow: hidden;
+  list-style-type: none;
+  background-color: hsl(0, 0%, 30%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
 }
 
 .navbar a {
-	color: white;
-	text-decoration: none;
-	padding: 15px;
-	text-align: center;
-	display: block;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .navbar a:hover {
-	color: #0074B4;
+  color: #0074b4;
 }
 
 .navbar li {
-	float: left;
+  float: left;
 }
 
 header > div {
-	background-color: hsl(0, 0%, 30%);
+  background-color: hsl(0, 0%, 30%);
 }
 
 main > h1 {
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 50px;
-	/* border: 4px solid purple; */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  /* border: 4px solid purple; */
 }
 
-body{
-	background-color: black;
-	margin: 0px;
-	min-width: 640px;
+body {
+  background-color: black;
+  margin: 0px;
+  min-width: 640px;
 }
 
 main {
-	margin-left: 20px;
-	margin-right: 20px;
-	display: flex;
-	flex-direction: column;
-	color: whitesmoke;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
 }
 
 #main_content {
-	display: flex;
-	flex-direction: row;
-	flex: 0 auto;
-	/* border: 4px solid yellow; */
+  display: flex;
+  flex-direction: row;
+  flex: 0 auto;
+  /* border: 4px solid yellow; */
 }
 
 #home_intro {
-	/* border: 4px solid green; */
-	min-width: 590px;
-	max-width: 590px;
-	padding-left: 10px;
-	padding-right: 10px;
+  /* border: 4px solid green; */
+  min-width: 590px;
+  max-width: 590px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #home_intro p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
 }
 
 footer {
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: last baseline;
-	/*border: 4px solid purple;*/
-	min-height: 300px;
-	font-size: 18px;
-	
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: last baseline;
+  /*border: 4px solid purple;*/
+  min-height: 300px;
+  font-size: 18px;
 }
 
 /*Carousel*/
 
 .carousel-container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-	/* border: 4px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border: 4px solid red; */
 }
 
 .carousel {
-	display: flex;
-	transition: transform 0.3s ease;
+  display: flex;
+  transition: transform 0.3s ease;
 }
 
 .carousel-slide {
-    flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .carousel-slide img {
-    /* max-width: 100%; */
-    height: 400px;
-	width: auto;
+  /* max-width: 100%; */
+  height: 400px;
+  width: auto;
 }
 
- #buttons button {
-	background-color: white;
+#buttons button {
+  background-color: white;
 }
 
 #buttons {
-	margin-top: 5px;
-	display: flex;
-	flex-direction: row;	
-	flex: 0 auto;
-	/* border: 4px solid purple; */
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex: 0 auto;
+  /* border: 4px solid purple; */
 }
 
 #space {
-	min-width: 845px;
-	max-width: 845px;
-	/* border: 4px solid blue; */
+  min-width: 845px;
+  max-width: 845px;
+  /* border: 4px solid blue; */
 }
 
 #prev {
-    border: solid 4px #0074B4;
-    padding: 25px;
-    border-radius: 50%;
-    background-color: whitesmoke;
-	margin-right:20px;
+  border: solid 4px #0074b4;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin-right: 20px;
 }
 
 #next {
-    border: solid 4px #0074B4;
-    padding: 25px;
-    border-radius: 50%;
-    background-color: whitesmoke;
-	margin-left: 20px;
+  border: solid 4px #0074b4;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  margin-left: 20px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
 #scoobydoo {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
-
 
 /*Creating flexboxes for the genres pages and game pages*/
 
 .box {
-	height: 400px;
-	width: 600px;
-	background-color: #0074B4;
-	font-size: 40px;
-	padding: 3px;
-	border: 6px groove white;
-	border-radius: 5%;
+  height: 400px;
+  width: 600px;
+  background-color: #0074b4;
+  font-size: 40px;
+  padding: 3px;
+  border: 6px groove white;
+  border-radius: 5%;
 }
 
 #genre_info {
-	padding-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	border-bottom: 3px solid white;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: 3px solid white;
 }
 
 #genre_info p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	margin-left: 60px;
-	margin-right: 60px;;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 #whole_genre_flexbox {
-	min-height: 800px;
-	display: flex;
-	/* border: 3px solid purple; */
-	justify-content: space-evenly;
-	gap: 50px;
-	align-items: center; /* if have multiple rows, use space-evenly here as well */
-	flex-wrap: wrap;
-	font-family: Arial, Helvetica, sans-serif;
-	padding-top: 30px;
-	padding-bottom: 30px;
+  min-height: 800px;
+  display: flex;
+  /* border: 3px solid purple; */
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: center; /* if have multiple rows, use space-evenly here as well */
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #whole_cod4_flexbox {
-	min-height: 1000px;
-	display: flex;
-	border: 8px solid purple;
-	justify-content: space-evenly;
-	align-items: center; /* if have multiple rows, use space-evenly here as well */
+  min-height: 1000px;
+  display: flex;
+  border: 8px solid purple;
+  justify-content: space-evenly;
+  align-items: center; /* if have multiple rows, use space-evenly here as well */
+}
+
+#genres_container {
+  min-height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: center; /* if have multiple rows, use space-evenly here as well */
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.genre_card {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.genre_title {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.genre_link {
+  text-decoration: none;
+  color: black;
+}
+
+#games_container {
+  min-height: 800px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  align-items: center; /* if have multiple rows, use space-evenly here as well */
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.game_card {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.game_title {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.game_link {
+  text-decoration: none;
+  color: black;
 }
 
 #fps_gamecard {
-	background: url(/photos/fps_background_image_3.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/fps_background_image_3.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #fps_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
-	/* background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
+  /* background-color: transparent;
 	backdrop-filter: blur(20px); */
 }
 
-
 #fps_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #action_adv_gamecard {
-	background: url(/photos/action_adventure_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/action_adventure_background_image.jpg) no-repeat
+    center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #action_adv_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
-
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #action_adv_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #sports_gamecard {
-	background: url(/photos/sports_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/sports_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #sports_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
-
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #sports_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #puzzle_gamecard {
-	background: url(/photos/puzzle_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/puzzle_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #puzzle_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
-
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #puzzle_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #survival_gamecard {
-	background: url(/photos/survival_background_image.jpeg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/survival_background_image.jpeg) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #survival_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
-
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #survival_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #mmo_gamecard {
-	background: url(/photos/mmo_background_image.webp) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/mmo_background_image.webp) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #mmo_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #mmo_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #cod4_gamecard {
-	background: url(/photos/cod4_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/cod4_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #cod4_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #cod4_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #halo3_gamecard {
-	background: url(/photos/halo3_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/halo3_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #halo3_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #halo3_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #black_ops_gamecard {
-	background: url(/photos/black_ops_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/black_ops_background_image.jpg) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #black_ops_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #black_ops_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #halo3_odst_gamecard {
-	background: url(/photos/halo_odst_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/halo_odst_background_image.jpg) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #halo3_odst_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #halo3_odst_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #uncharted3_gamecard {
-	background: url(/photos/uncharted3_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/uncharted3_background_image.jpg) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #uncharted3_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #uncharted3_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #arkham_knight_gamecard {
-	background: url(/photos/arkham_knight_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/arkham_knight_background_image.jpg) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #arkham_knight_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #arkham_knight_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #fifa15_gamecard {
-	background: url(/photos/fifa15_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/fifa15_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #fifa15_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #fifa15_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #nba2k16_gamecard {
-	background: url(/photos/nba2k16_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/nba2k16_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #nba2k16_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #nba2k16_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #supermariostrikers_gamecard {
-	background: url(/photos/supermariostrikers_background_image.png) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/supermariostrikers_background_image.png) no-repeat
+    center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #supermariostrikers_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #supermariostrikers_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #portal2_gamecard {
-	background: url(/photos/portal2_background_image.jpeg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/portal2_background_image.jpeg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #portal2_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #portal2_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #call_of_the_sea_gamecard {
-	background: url(/photos/call_of_the_sea_background_image.png) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/call_of_the_sea_background_image.png) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #call_of_the_sea_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #call_of_the_sea_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #littlebigplanet_3_gamecard {
-	background: url(/photos/littlebigplanet_3_background_image.avif) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/littlebigplanet_3_background_image.avif) no-repeat
+    center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #littlebigplanet_3_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #littlebigplanet_3_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #dayz_gamecard {
-	background: url(/photos/dayz_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/dayz_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #dayz_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #dayz_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #minecraft_gamecard {
-	background: url(/photos/minecraft_background_image.webp) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/minecraft_background_image.webp) no-repeat center
+    center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #minecraft_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #minecraft_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #wow_gamecard {
-	background: url(/photos/wow_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/wow_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #wow_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #wow_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #ddo_gamecard {
-	background: url(/photos/ddo_background_image.jpg) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/ddo_background_image.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #ddo_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #ddo_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #eso_gamecard {
-	background: url(/photos/eso_background_image.avif) no-repeat center center;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+  background: url(/photos/eso_background_image.avif) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #eso_gamecard > div {
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	min-width: 100%;
-	background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: aliceblue;
 }
 
 #eso_gamecard > div > a {
-	color:black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 /* ------------------------------------------------------------------------------------------------------------*/
