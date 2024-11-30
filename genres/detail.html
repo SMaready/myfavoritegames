@@ -101,7 +101,7 @@
 
                         var link = $("<a>");
                         link.attr("id", "game_link_" + data[i].id);
-                        link.attr("href", "./detail.html?genreId=" + data[i].id);
+                        link.attr("href", data[i].detailUrl);
                         link.text(data[i].name);
                         link.addClass("game_link");
                         title.append(link);

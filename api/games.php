@@ -33,6 +33,7 @@ $sql = "SELECT ga.id,
         ga.name, 
         ga.genreId,
         ga.imageUrl,
+        ga.detailUrl,
         ge.name AS genreName,
         ge.description AS genreDescription
         FROM games ga INNER JOIN genres ge ON ga.genreId=ge.Id";
@@ -67,6 +68,7 @@ if ($result->num_rows > 0) {
       'name' => $row["name"],
       'genreId' => $row["genreId"],
       'imageUrl' => $row["imageUrl"],
+      'detailUrl' => $row["detailUrl"],
       'genreName' => $row["genreName"],
       'genreDescription' => $row["genreDescription"]
     ];
