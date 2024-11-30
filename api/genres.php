@@ -15,8 +15,8 @@ if (!empty($_GET)) {
 
 $servername = "localhost";
 $username = "stephan";
-$password = "Ste99Mar!!";
-$dbname = "CSCI12";
+$password = "awesomegamesinc!";
+$dbname = "csci12db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
