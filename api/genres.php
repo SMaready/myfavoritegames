@@ -24,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, name, imageUrl, detailUrl FROM genres";
+$sql = "SELECT id, name, imageUrl, description FROM genres";
 
 if (!empty($id)) {
     $sql = $sql . " WHERE Id = " . $id;
@@ -44,7 +44,7 @@ if ($result->num_rows > 0) {
         'id' => $row["id"], 
         'name' => $row["name"], 
         'imageUrl' => $row["imageUrl"], 
-        'detailUrl' => $row["detailUrl"]
+        'description' => $row["description"]
     ];
     $genres[] = $genre;
   }
