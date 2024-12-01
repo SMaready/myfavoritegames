@@ -34,7 +34,7 @@ INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (2, 'Halo 3', 1
 INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (3, 'Halo 3: ODST', 1, '/photos/halo_odst_background_image.jpg', '/games/halo3_odst.html');
 INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (4, 'Modern Warfare', 1, '/photos/cod4_background_image.jpg', '/games/cod4.html');
 
-INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (5, 'Batman: Arkham', 2, '/photos/arkham_knight_background_image.jpg', '/games/arkham_knight.html');
+INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (5, 'Batman: Arkham Knight', 2, '/photos/arkham_knight_background_image.jpg', '/games/arkham_knight.html');
 INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (6, 'Uncharted 3', 2, '/photos/uncharted3_background_image.jpg', '/games/uncharted3.html');
 
 INSERT INTO games(id, name, genreId, imageUrl, detailUrl) VALUES (7, 'FIFA 15', 3, '/photos/fifa15_background_image.jpg', '/games/fifa15.html');
